@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta >
+<style>
+  body {
+    margin: 0;
+    font-family: "Arial Narrow";
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: royalblue;
+  }
+
+  .topnav a {
+    float: left;
+    color: honeydew;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .flex {
+    display: flex;
+  }
+  .box{
+    float: left;
+    width: 15%;
+    padding: 3px;
+    border: 1px solid #000000;
+  }
+  .box-overskrift{
+    float: left;
+    width: 15%;
+    padding: 3px;
+    border: 1px solid #000000;
+    font-weight: bold;
+  }
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav", style="text-align: center" >
+  <h1  >
+
+    Kroppsmasseindeks
+  </h1>
+
+
+</div>
+
+<div style="padding-left: 20px">
+  <h3>KMI, Kroppsmasseindeks </h3>
+  <p> KMI (kroppsmasseindeks), er en formel som måler høyden og vekten til en person og finner en KMI so kan brukes til å beregne en persons helse. </p>
+  <p> Måten det regnes ut på er vekt:(høyde x høyde) som i et tillfelle med 190 høyde og 85 kg vekt vil bli 23,5 som tilsier normalvekt. Bruk grafen under for å finne din gruppe</p>
+</div>
+
+<div class="test">
+
+  <div class="wrapper">
+    <form name="calc">
+      <input type="text" name="vekt" id="tall" value="Vekt">
+      <input type="text" name="hoyde" id="tall" value="Høyde">
+      <input type="button" value="=" onclick="calc.svar.value=eval(calc.vekt.value/(calc.hoyde.value*calc.hoyde.value))">
+      <input type="text" name="svar" id="tall">
+    </form>
+  </div>
+
+
+  <script>
+    function calcBMI() {
+      document.getElementById("main").innerHTML="utregning"
+
+    }
+
+  </script>
+
+<div class="flex">
+  <div class="box-overskrift">
+    <P>
+      Klassifisering
+    </P>
+
+  </div>
+  <div class="box-overskrift">
+    <P>
+      KMI
+    </P>
+
+  </div>
+  <div class="box-overskrift">
+    <P>
+      Sykdomsrisiko
+    </P>
+  </div>
+  <div class="box-overskrift">
+    <P>
+      Helsetips
+    </P>
+  </div>
+</div>
+<div class="flex">
+  <div class="box">
+    <P>
+      Undervekt
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      18,4 eller lavere
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      Lav for diabetes, økt for andre helseproblemer
+    </P>
+  </div>
+  <div class="box">
+    <P>
+      Innta mer kalorier, ikke overtren
+    </P>
+  </div>
+</div>
+<div class="flex">
+  <div class="box">
+    <P>
+      normalvekt
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      18,5-24,9
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      lav
+    </P>
+  </div>
+  <div class="box">
+    <P>
+      Frisk og fin
+    </P>
+  </div>
+</div>
+<div class="flex">
+  <div class="box">
+    <P>
+      Overvekt
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      25,0-29,9
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      Økt for diabetes
+    </P>
+  </div>
+  <div class="box">
+    <P>
+      Innta mindre kalorier, tren mer
+    </P>
+  </div>
+</div>
+<div class="flex">
+  <div class="box">
+    <P>
+      Fedme - grad 1
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      30,0-34,9
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      Økt for diabetes og dødelighet
+    </P>
+  </div>
+  <div class="box">
+    <P>
+      Innta mindre kalorier, tren mer
+    </P>
+  </div>
+</div>
+<div class="flex">
+  <div class="box">
+    <P>
+      fedme - grad 2
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      35,0-39,9
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      Høy risiko for flere helseproblemer, og økt dødelighet
+    </P>
+  </div>
+  <div class="box">
+    <P>
+      Innta mindre kalorier, tren mer
+    </P>
+  </div>
+</div>
+<div class="flex">
+  <div class="box">
+    <P>
+      fedme - grad 3
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      40+
+    </P>
+
+  </div>
+  <div class="box">
+    <P>
+      Ytterligere økt helserisiko
+    </P>
+  </div>
+  <div class="box">
+    <P>
+      Innta mye mindre kalorier, spis mer variert, tren mye mer
+    </P>
+  </div>
+</div>
+
+
+  <a href="https://www.fhi.no/fp/overvekt/kroppsmasseindeks-kmi-og-helse/" target="_blank">
+    FHI.no, kilde
+  </a>
+
+</body>
+</html>
+
+
+
+
